@@ -1,0 +1,250 @@
+fileVersion: 1
+id: 9c060949-6ddf-43f6-a1a8-b3c409786138
+name: STG_FORECAST
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03f4e3e6-3e47-4cc0-896b-93d2a9c6009c
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3aaace21-e41a-4e76-ad6f-b41d1aac6ec8
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16552599-425c-4fa2-9c82-de2fa167cd40
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STORE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: df38cf3d-2fdc-4776-9d93-77342a0e815d
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cba3e03c-9dcb-438e-96f3-120a9639c612
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PRODUCT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 915cee8a-a38f-439b-94c8-badcbb4a7e49
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cb551be-11e7-4992-8d2b-3ed0eb23c58f
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa455fef-f650-42d1-a11d-791b8f767c20
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac916084-1028-425e-b6cb-fc845fc213cf
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: REGION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d78f243-c25e-4634-8d04-b450b9596ef4
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e424c24-ab80-4485-bb6e-a7c8085f3e40
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INVENTORY_LEVEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9fe484f-0749-4a12-9da1-0c7c64c6efbd
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fbfd2bd9-5022-4e64-8f47-9945d1db1fb8
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNITS_SOLD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3fe64ec2-d2c5-452f-a6d2-f6ed9e759875
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 675a9697-c40d-4aa8-a032-3f442bcbabcc
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNITS_ORDERED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69d78e04-d0c9-4690-9bda-a1cb069bb1d2
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 658f5d56-b226-4967-8dc6-8f51ac30ff45
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DEMAND_FORECAST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 06714427-ad42-4db9-a3ba-68c3e0839583
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99f9c6a8-cf29-4f50-9b67-273dcf9832e8
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRICE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dfeb7146-3f08-4225-97b5-f30a6f941f7e
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4882b41c-daee-4f88-ad02-2238474fb4f1
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DISCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 204d7549-ca5f-46ca-a002-facaf3be3492
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac1cbb7e-8634-4e42-9891-43ea3868d9e6
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: WEATHER_CONDITION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b1e16652-6707-4738-9130-7bc2fee0a291
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a6792c3-501d-493f-8dac-7d58b523d3bf
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: HOLIDAY_PROMOTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 369ec970-1225-49b4-867c-5fd5a54ddbd3
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 830c6464-9db6-4e04-ad66-ca85a961fbdf
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: COMPETITOR_PRICING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 777218f5-3c2b-4b3a-ac21-6b2dd8a92204
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd25f72f-8106-4ca0-b96f-d6a1f3d61bd0
+          stepCounter: 9c060949-6ddf-43f6-a1a8-b3c409786138
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: SEASONALITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b6086f1d-64d7-4e96-8bba-4f89b60b4f30
+                stepCounter: fda01777-b824-4fc7-b5ad-2295edf62380
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FORECAST: fda01777-b824-4fc7-b5ad-2295edf62380
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: FORECAST
+        join:
+          joinCondition: FROM {{ ref('SRC', 'FORECAST') }} "FORECAST"
+        name: STG_FORECAST
+        noLinkRefs: []
+  name: STG_FORECAST
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
